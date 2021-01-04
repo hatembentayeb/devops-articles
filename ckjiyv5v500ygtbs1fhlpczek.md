@@ -1,11 +1,5 @@
 ## Deploying a Dockerized Angular App with Github Actions
 
-<span class="s"></span>![Image for post](https://miro.medium.com/max/60/1*qwCLq8i1LQOktpAmtha26w.png?q=20)
-
-
-<noscript><img alt="Image for post" class="t u v dp aj" src="https://miro.medium.com/max/2406/1*qwCLq8i1LQOktpAmtha26w.png" width="1203" height="633" srcSet="https://miro.medium.com/max/552/1*qwCLq8i1LQOktpAmtha26w.png 276w, https://miro.medium.com/max/1104/1*qwCLq8i1LQOktpAmtha26w.png 552w, https://miro.medium.com/max/1280/1*qwCLq8i1LQOktpAmtha26w.png 640w, https://miro.medium.com/max/1456/1*qwCLq8i1LQOktpAmtha26w.png 728w, https://miro.medium.com/max/1632/1*qwCLq8i1LQOktpAmtha26w.png 816w, https://miro.medium.com/max/1808/1*qwCLq8i1LQOktpAmtha26w.png 904w, https://miro.medium.com/max/1984/1*qwCLq8i1LQOktpAmtha26w.png 992w, https://miro.medium.com/max/2160/1*qwCLq8i1LQOktpAmtha26w.png 1080w, https://miro.medium.com/max/2406/1*qwCLq8i1LQOktpAmtha26w.png 1203w" sizes="1203px"/></noscript>
-
-
 
 > In this article we will discover the devops movement step by step, we will talk about the fundamental concepts then we will make a basic pipeline with github actions to deploy an angular 6 app, so let’s go.
 
