@@ -2,7 +2,6 @@
 
 > In  this Post  we will setup a React pipeline using Gitlab,Ansible and docker. we will go throught the whole process from nothing to a fast, reliable and hightly customizable pipeline with multi-environment deployment. 
 
-
 <center> <h2>**Daah ! let's start i can't wait	 !**</h2></center>
 
 ## Tools
