@@ -46,11 +46,7 @@ It’s all about infrastructure preparation and environment setup with some tool
 
 The performance is very important, so we install and configure some monitoring tools like ELK, nagios and datadog to get all information about the applications like CPU and memory usage …
 
- [## Agile Management: The Good, The Bad, and the Downright Ugly | Data Driven Investor
 
-### Companies are constantly reinventing themselves to gain or maintain competitive advantage and market share. This is…
-
-#### www.datadriveninvestor.com](https://www.datadriveninvestor.com/2019/03/26/agile-management-the-good-the-bad-and-the-downright-ugly/) 
 
 # Deploying an angular app
 
