@@ -29,7 +29,7 @@ If you want some thoughts about mailcow from real users check this reddit discus
 
 # Server Requirements 
 
-The recommended OS to run mailcow is `ubuntu 18.04`, don't use cento7 because the maintainers said : 
+The recommended OS to run mailcow is `ubuntu 18.04`, also don't use cento7 packages on cento8  because the maintainers said : 
 > Do not use CentOS 8 with Centos 7 Docker packages. You may create an open relay.
 
 For the resources i bought a VPS from OVH cloud provider with : 
@@ -229,7 +229,7 @@ To create a mailbox folow those steps :
 5. on the bottom click on the green icon, you will get an interface of sending a mail 
 6. In your browser open another tab and go to this site : mail-tester.com and copy the mail address.
 7. Return to your `SoGo` interface and send a mail with that mail, on the body make sure to add some text with a least two paragraphs.
-8. Wait 10 seconds and go the mail-testor.com and click on `then check your score` 
+8. Wait 10 seconds and go the mail-tester.com and click on `then check your score` 
 
 And **BOOM** you should get this result **You Can Send**  : 
 
