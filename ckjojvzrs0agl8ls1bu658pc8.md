@@ -1,4 +1,4 @@
-## Mailcow: Setting up a full featured mail server
+## Mailcow: Setting up a full featured self hosted mail server
 
 > Setting up a full featured mail server is an actual **PAIN** for a system admin, you have to interconnect many software pieces and a lot of testing espacially security and spam if you plan to use it for your company ... In this Post i will take you in my journey of setting up  a  full featured  mail server, i was searching a lot on the internet and i didn't get a sweetable answer to move on .. but finally i successfully made it ! .. It works with multiple domains, secure and no spam problems !
 
