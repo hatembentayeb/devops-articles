@@ -262,6 +262,8 @@ I will not repeat the same steps it's quite easy so let's go :
 Don't send a lot of mails directly you will be blocked ! ... so start step by step  by sending 20 mails per day for the first week then try sending 80 the next week ... after 2 months you can send a lot of mails like 1000 mails, but take in mind that you need to add the `list unsubscribe headers` to your postfix to allow users to unsubscribe against your newsletters/subscriptions. 
 
 
+please follow me on twitter [@hatem ben tayeb](https://twitter.com/hatembentayeb)
+
 
 
 
