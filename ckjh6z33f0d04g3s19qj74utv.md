@@ -1,12 +1,5 @@
 ## Hello Docker 😄 —Part I
 
-<span class="s"></span>![Image for post](https://miro.medium.com/max/60/1*VgAcDA1FYw0xOMN3Y-rNeA.png?q=20)
-
-<noscript><img alt="Image for post" class="t u v dp aj" src="https://miro.medium.com/max/2400/1*VgAcDA1FYw0xOMN3Y-rNeA.png" width="1200" height="729" srcSet="https://miro.medium.com/max/552/1*VgAcDA1FYw0xOMN3Y-rNeA.png 276w, https://miro.medium.com/max/1104/1*VgAcDA1FYw0xOMN3Y-rNeA.png 552w, https://miro.medium.com/max/1280/1*VgAcDA1FYw0xOMN3Y-rNeA.png 640w, https://miro.medium.com/max/1456/1*VgAcDA1FYw0xOMN3Y-rNeA.png 728w, https://miro.medium.com/max/1632/1*VgAcDA1FYw0xOMN3Y-rNeA.png 816w, https://miro.medium.com/max/1808/1*VgAcDA1FYw0xOMN3Y-rNeA.png 904w, https://miro.medium.com/max/1984/1*VgAcDA1FYw0xOMN3Y-rNeA.png 992w, https://miro.medium.com/max/2160/1*VgAcDA1FYw0xOMN3Y-rNeA.png 1080w, https://miro.medium.com/max/2400/1*VgAcDA1FYw0xOMN3Y-rNeA.png 1200w" sizes="1200px"/></noscript>
-
-
-# Hello Docker 😄 —Part I
-
 
 > In this story i will share my docker experience, so, be ready ! to know the most used container technologies in the hole world ! . I will help you to get started in docker also we will deep dive into cool features … , and by the end of this story you will be able to make your own projects using docker and docker-compose 😅.
 > The second part is ready : [Learn Docker From Scratch](/@hatemtayeb2/hello-docker-part-ii-998472c6e296)
