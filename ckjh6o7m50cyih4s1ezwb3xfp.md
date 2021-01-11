@@ -1,11 +1,5 @@
 ## Automate you Documentation with Gitlab and Mkdocs
 
-<span class="s"></span>![Image for post](https://miro.medium.com/max/60/1*kAsK8EV8ukMDnrwnsTHBHQ.png?q=20)
-
-
-<noscript><img alt="Image for post" class="t u v ek aj" src="https://miro.medium.com/max/3840/1*kAsK8EV8ukMDnrwnsTHBHQ.png" width="1920" height="960" srcSet="https://miro.medium.com/max/552/1*kAsK8EV8ukMDnrwnsTHBHQ.png 276w, https://miro.medium.com/max/1104/1*kAsK8EV8ukMDnrwnsTHBHQ.png 552w, https://miro.medium.com/max/1280/1*kAsK8EV8ukMDnrwnsTHBHQ.png 640w, https://miro.medium.com/max/1456/1*kAsK8EV8ukMDnrwnsTHBHQ.png 728w, https://miro.medium.com/max/1632/1*kAsK8EV8ukMDnrwnsTHBHQ.png 816w, https://miro.medium.com/max/1808/1*kAsK8EV8ukMDnrwnsTHBHQ.png 904w, https://miro.medium.com/max/1984/1*kAsK8EV8ukMDnrwnsTHBHQ.png 992w, https://miro.medium.com/max/2000/1*kAsK8EV8ukMDnrwnsTHBHQ.png 1000w" sizes="1000px"/></noscript>
-
-# Automate your Documentation with Gitlab and Mkdocs
 
 
 > Producing documentation may be painful and need a lot of time to write and operate. In this story, i will share with you, my way of generating docs using the devops approach. To make life easier, we will explore the art of automation 😃.
