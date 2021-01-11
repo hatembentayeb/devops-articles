@@ -2,21 +2,20 @@
 
 
 
-> In this article we will discover the devops movement step by step, we will talk about the fundamental concepts then we will make a basic pipeline with github actions to deploy an angular 6 app, so let’s go.
+> In this article we will discover the DevOps movement step by step, we will talk about the fundamental concepts then we will make a basic pipeline with GitHub actions to deploy an Angular 6 app, so let’s go.
 
-# What is devops ?
+# What is DevOps?
 
-Devops is used to remove the conflict between the developers team and the operations team to work together. This conflict is removed by adding a set of best practices, rules and tools. The devops workflow is defined with a set of setps :
+DevOps is used to remove the conflict between the developers team and the operations team to work together. This conflict is removed by adding a set of best practices, rules, and tools. The DevOps workflow is defined with a set of steps :
 
 ![Image for post](https://miro.medium.com/max/60/1*EBXc9eJ1YRFLtkNI_djaAw.png?q=20)
 
 <noscript><img alt="Image for post" class="t u v dp aj" src="https://miro.medium.com/max/3964/1*EBXc9eJ1YRFLtkNI_djaAw.png" width="1982" height="1020" srcSet="https://miro.medium.com/max/552/1*EBXc9eJ1YRFLtkNI_djaAw.png 276w, https://miro.medium.com/max/1104/1*EBXc9eJ1YRFLtkNI_djaAw.png 552w, https://miro.medium.com/max/1280/1*EBXc9eJ1YRFLtkNI_djaAw.png 640w, https://miro.medium.com/max/1400/1*EBXc9eJ1YRFLtkNI_djaAw.png 700w" sizes="700px"/></noscript>
 
-devops wokflow
 
 ## Plan
 
-This is the first step, where the team defines the product goals and phases, also defining deadlines and assigning tasks to every team member, this step is the root of the hole workflow. the team uses many methodology like scrum and agile.
+This is the first step, where the team defines the product goals and phases, also defining deadlines and assigning tasks to every team member, this step is the root of the whole workflow. the team uses many methodology like scrum and agile.
 
 ## Code:
 
@@ -40,7 +39,7 @@ A pre-prod or a production server is the target now, to make our app up and runn
 
 ## Operate:
 
-It’s all about infrastructure preparation and environment setup with some tools like terraform for IaaC, ansible for configuration management and security stuff configurations …
+It’s all about infrastructure preparation and environment set up with some tools like terraform for IaaC, Ansible for configuration management and security stuff configurations …
 
 ## Monitor:
 
@@ -62,11 +61,11 @@ The application repository is here : [Github repo](https://github.com/hatembenta
 1.  Clone the project with `git clone https://github.com/hatembentayeb/angular-devops`
 2.  run `npm install && ng serve` to run the app locally
 
-## Preparing the deployment for heroku
+## Preparing the deployment for Heroku
 
-Nginx is a popular and powerful web server can be used to serve a large variety of apps based on python, angular and react …
+Nginx is a popular and powerful web server that can be used to serve a large variety of apps based on python, angular, and react …
 
-I will go through an optimization process to produce a clean and a lightweight docker container with the best practices as much as i can.
+I will go through an optimization process to produce a clean and lightweight docker container with the best practices as much as I can.
 
 ## Writing the Dockerfile
 
@@ -93,7 +92,7 @@ This Dockerfile is splitted into two stages :
 *   **Builder stage :** The name of the stage is builder, it is a temporary docker container that produces an artifact which is the `dist/` folder created by `ng build --prod` that compiles our project to produce a single `html` page and some `*js & *.css` . The base images that is used here is `trion/ng-cli` that containes all requirements to run an angular up and it’s accessible for public use in the `Docker-hub`, the public docker registry.
     Make sure to install all app requirement packages with `npm ci` , the `ci` command is used often in the continues integration environments because it is faster than `npm install.`
 *   **Final stage:** The base image for this stage is `nginx:1.17.5` and simply we copy the `dist/` folder from the `builder` stage to the `/var/share/nginx/html` folder in the nginx container with the command `COPY --from=builder ...`
-    There is additional configurations required to run the app, we need to configure nginx, there is a file named `default.conf.template` that contains a basic nginx configurations so we copy it to the container under `/etc/nginx/conf.d/default.conf.template` , this file have the **_$PORT_** variable that have to be changed when building the docker image in the heroku environment.
+    There is additional configurations required to run the app, we need to configure nginx, there is a file named `default.conf.template` that contains a basic nginx configuration so we copy it to the container under `/etc/nginx/conf.d/default.conf.template` , this file has the **_$PORT_** variable that has to be changed when building the docker image in the Heroku environment.
     The `default.conf.template` :
 
 
@@ -152,7 +151,7 @@ let’s take a look at the pipeline steps and configurations :
 
 *   **Block 1**: In this block we define the the workflow name and the actions that must be performed to start the build , test and the deployment. and of course you have to specify the branch of your repo (by default `master` ).
 *   **Block 2** : The `jobs` keyword has to sub keywords `build` and `steps` , the build define the base os for the continues integration environment, in this case we will use `ubuntu-latest` , also we define the `node-version` as a matrix that allow us to use multiple node versions in the list, in this case we need only `12.x` . The steps allow us to define the wokflow steps and configurations ( build,test,deploy...).
-*   **Block 3** : `actions/checkout@v1` is used to clone the app code in the ci env. this action is provided by github.
+*   **Block 3** : `actions/checkout@v1` is used to clone the app code in the ci env. this action is provided by GitHub.
     Lets define a `cache` action with the name `cache node modules` , the name is up to you 😃, then we use a predefined action called `actions/cache@v1` and specify the folders that we want to cache.
 *   **Block 4** : Installing and configuring the node run-time with an action called `actions/node-setup@v1` and pass to it the desired node version that we already defined.
 *   **Block 5** : The show will begin now ! let’s configure the build and the deployment to the VPS. Create two environment variables `SSHPASS` for the sshpass command and define the `server` address , make sure to define these values on the github secrets under setting on the top of your repo files. Under `run` keyword put your deployment logic. so we need the sshpass command and and the angular cli to be installed, then install all required packages and build the app with the production mode `--prod` , next, navigate to the `dist/my-first-app` folder and run the sshpass command with a set of arguments to remove older app in the server and deploy the new code.
@@ -164,7 +163,6 @@ We are almost done! now try to make a change in the app code and push it to GitH
 
 <noscript><img alt="Image for post" class="t u v dp aj" src="https://miro.medium.com/max/2732/1*O2HJGDQaLjiL4ePKNdHHWw.png" width="1366" height="620" srcSet="https://miro.medium.com/max/552/1*O2HJGDQaLjiL4ePKNdHHWw.png 276w, https://miro.medium.com/max/1104/1*O2HJGDQaLjiL4ePKNdHHWw.png 552w, https://miro.medium.com/max/1280/1*O2HJGDQaLjiL4ePKNdHHWw.png 640w, https://miro.medium.com/max/1400/1*O2HJGDQaLjiL4ePKNdHHWw.png 700w" sizes="700px"/></noscript>
 
-GitHub actions ci env
 
 You can view the app here: [https://angulardevops.herokuapp.com/](https://angulardevops.herokuapp.com/)
 
@@ -172,7 +170,6 @@ You can view the app here: [https://angulardevops.herokuapp.com/](https://angula
 
 <noscript><img alt="Image for post" class="t u v dp aj" src="https://miro.medium.com/max/2732/1*P_cruJ70nMbv363xAy8cKg.png" width="1366" height="768" srcSet="https://miro.medium.com/max/552/1*P_cruJ70nMbv363xAy8cKg.png 276w, https://miro.medium.com/max/1104/1*P_cruJ70nMbv363xAy8cKg.png 552w, https://miro.medium.com/max/1280/1*P_cruJ70nMbv363xAy8cKg.png 640w, https://miro.medium.com/max/1400/1*P_cruJ70nMbv363xAy8cKg.png 700w" sizes="700px"/></noscript>
 
-heroku app deployment
 
 Finally, this tutorial is aimed to help developers and DevOps engineers to deploy an Angular app, I hope it is helpful 😍. for any feedback please contact me!
 
