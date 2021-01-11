@@ -1,8 +1,8 @@
-## Automate you Documentation with Gitlab and Mkdocs
+## Automate your Documentation with Gitlab and Mkdocs
 
 
 
-> Producing documentation may be painful and need a lot of time to write and operate. In this story, i will share with you, my way of generating docs using the devops approach. To make life easier, we will explore the art of automation 😃.
+> Producing documentation may be painful and need a lot of time to write and operate. In this story, I will share with you, my way of generating docs using the DevOps approach. To make life easier, we will explore the art of automation 😃.
 
 > Let’s go folks 😙
 
@@ -29,7 +29,7 @@ $ git clone [https://gitlab.com/auto_docs.git](https://gitlab.com/auto_docs.git)
 
 I’m using a Linux environment but it is possible to reproduce the same steps on a Windows machine.
 
-In order to follow me, you need a set of tools that must be available on your machine … make sure to to have `python3` installed, I have python 3.8 (latest).
+In order to follow me, you need a set of tools that must be available on your machine … make sure to have `python3` installed, I have python 3.8 (latest).
 
 ## Creating a virtual environment
 
@@ -49,7 +49,7 @@ $ source autodocs/bin/acivate</span>
 
 Make sure that the virtual environment is active.
 
-Install the mkdocs material with this command : `pip install mkdocs-material.`
+Install the mkdocs material with this command: `pip install mkdocs-material.`
 This package needs some dependencies to work .. install them by using a requirement.txt file, copy-paste the dependencies list to filename `requirements.txt`
 
 
@@ -86,7 +86,7 @@ tqdm==4.45.0</span>
 ```
 
 
-Install them all with one command : `pip install -r requirements.txt`
+Install them all with one command: `pip install -r requirements.txt`
 Now it’s time to create a new mkdocs project 😅.
 
 Run this command : `mkdocs new .` and verify that you have this structure :
@@ -102,11 +102,11 @@ Run this command : `mkdocs new .` and verify that you have this structure :
 *   The **docs** folder contains the structure of your documentation, it contains subfolders and markdown files.
 *   The **mkdocs.yml** file defines the configuration of the generated site.
 
-Let's test the installation by running this command : `mkdocs serve` . The site will be accessible on [http://locahost:8000](http://locahost:8000) and you should see the initial look of the docs.
+Let's test the installation by running this command: `mkdocs serve`. The site will be accessible on [http://locahost:8000](http://locahost:8000) and you should see the initial look of the docs.
 
 # Setting up the CI/CD
 
-let’s enable le CI/CD to automate the build and the deployment of the docs. Notice that GitLab offers a feature called `gitlab pages` that can serve for free a static resource (HTML, js, CSS). The repo path is converted to an URL to your docs.
+let’s enable le CI/CD to automate the build and the deployment of the docs. Notice that GitLab offers a feature called `GitLab pages` that can serve for free a static resource (HTML, js, CSS). The repo path is converted to an URL to your docs.
 
 ## Create the CI/CD file
 
@@ -142,7 +142,7 @@ For tags: check the runner's section under **settings → CI/CD →Runners** and
 
 All things were done 🎉 🎉 😸 !
 
-Oh ! just one thing … we forgot the virtual environment files .. they are big and not needed on the pipeline … they are for the local development only. The mkdocs image on the pipeline is already shipped with the necessary packages.
+Oh! just one thing … we forgot the virtual environment files .. they are big and not needed on the pipeline … they are for the local development only. The mkdocs image on the pipeline is already shipped with the necessary packages.
 
 So … create a new file called `.gitignore` and add these lines:
 
@@ -155,9 +155,9 @@ requirements.txt</span>
 
 The **auto_docs** folder has the same name as the virtual environment .. don't forget 😠! you will be punished by pushing +100Mi 😝 and you will wait your whole life to complete the process haha 😢.
 
-Now run `git add . && git commit -m "initial commit" a && git push` … go to your GitLab repo and click **CI/CD → pipelines,** click on the blue icon and visualize the logs .. once the job succeeded, navigate to **settings -> pages** and click the link of your new documentation site (you have to wait for 10m~ to be accessible)
+Now run `git add. && git commit -m "initial commit" a && git push` … go to your GitLab repo and click **CI/CD → pipelines,** click on the blue icon and visualize the logs .. once the job succeeded, navigate to **settings -> pages** and click the link of your new documentation site (you have to wait for 10m~ to be accessible)
 
-> Finally, I hope this was helpful ! thanks for reading 😺 😍!
+> Finally, I hope this was helpful! thanks for reading 😺 😍!
 
 ![Image for post](https://miro.medium.com/max/60/0*Piks8Tu6xUYpF4DU?q=20)
 
