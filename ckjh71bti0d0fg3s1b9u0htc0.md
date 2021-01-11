@@ -2,7 +2,7 @@
 
 
 
-> Hello to the second part of the “_hello docker “_ series, if your are new on docker please check the previous part by following this [_hello docker 😃 — Part I_](/@hatemtayeb2/hello-docker-part-i-5e68889de0b1)_,_ In this lecture i will show you more advanced feature of the docker command line, also we will create a basic dockerized project for a simple python app with flask and we will push to [dockerhub](https://hub.docker.com/).
+> Hello to the second part of the “_hello docker “_ series, if your are new on docker please check the previous part by following this [_hello docker 😃 — Part I_](https://hatembentayeb.hashnode.dev/hello-docker-part-i)_,_ In this lecture i will show you more advanced feature of the docker command line, also we will create a basic dockerized project for a simple python app with flask and we will push to [dockerhub](https://hub.docker.com/).
 
 # Common Docker commands
 
