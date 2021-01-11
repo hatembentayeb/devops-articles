@@ -2,7 +2,7 @@
 
 
 > In this story i will share my docker experience, so, be ready ! to know the most used container technologies in the hole world ! . I will help you to get started in docker also we will deep dive into cool features … , and by the end of this story you will be able to make your own projects using docker and docker-compose 😅.
-> The second part is ready : [Learn Docker From Scratch](/@hatemtayeb2/hello-docker-part-ii-998472c6e296)
+> The second part is ready : [hello docker part II](https://hatembentayeb.hashnode.dev/hello-docker-part-ii)
 
 # **What is Docker ?**
 
