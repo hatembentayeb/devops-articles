@@ -79,5 +79,6 @@ chmod +x podschecker.sh
 
 ![PodHealth.gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1610725608108/yrhW96uAh.gif)
 
-Repository : https://github.com/hatembentayeb/podschecker
-***The scripts don't do much but it was a result of a boring 3 hours on this pandemic**  🥲
+Repository: https://github.com/hatembentayeb/podschecker
+
+**The scripts don't do much but it was a result of a boring 3 hours on this pandemic**  🥲
